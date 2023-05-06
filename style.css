@@ -1,0 +1,160 @@
+:root {
+  /* ### Primary */
+
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral */
+
+  /* (main BG) */
+  --Very-dark-blue-mainbg: hsl(217, 54%, 11%);
+  /* (card BG) */
+  --Very-dark-blue-cardbg: hsl(216, 50%, 16%);
+  /* (line) */
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  -white: hsl(0, 0%, 100%);
+}
+
+/****** TAG SELECTOR ******/
+* {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background-color: var(--Very-dark-blue-mainbg);
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+span {
+  color: white;
+  margin-left: 5px;
+}
+
+/****** CLASS SELECTOR ******/
+
+/*** Images */
+.card {
+  background-color: var(--Very-dark-blue-cardbg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 275px;
+}
+.image {
+  position: relative;
+}
+/*In this code's color, I added an extra % for the opacity*/
+/*I was also able to center the view image on top of the main one*/
+.image div {
+  background-color: hsl(178, 100%, 50%, 60%);
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/* with this code I centered the view icon. */
+.image div img {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.eth-picture {
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+/*** Information ***/
+.equilibrium {
+  margin-top: 1.5rem;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.about {
+  color: var(--Soft-blue);
+  font-weight: 300;
+  margin: 0.6rem 0 1rem 0;
+  line-height: 28px;
+}
+
+/* with this code I aligned the two items correctly */
+.price-days {
+  border-bottom: solid 1px hsl(215, 51%, 70%);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+/*with these following codes, I centered the icons and the text*/
+.price {
+  color: cyan;
+  display: flex;
+  font-size: 14px;
+  justify-items: center;
+  letter-spacing: 1px;
+}
+
+/* You can also use the gap #px to space between items */
+.price img {
+  margin-right: 5px;
+}
+.days {
+  align-items: center;
+  color: var(--Soft-blue);
+  display: flex;
+  font-size: 14px;
+}
+.days img {
+  margin-right: 5px;
+}
+
+.creator {
+  align-items: center;
+  color: var(--Soft-blue);
+  display: flex;
+  font-size: 15px;
+}
+
+.avatar {
+  border: solid 1px white;
+  border-radius: 100%;
+  margin-right: 1rem;
+  width: 30px;
+}
+
+/****** PSEUDO CLASSES ******/
+
+.image div:hover {
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+h3:hover,
+span:hover {
+  color: var(--Cyan);
+}
+
+h3,
+span {
+  cursor: pointer;
+}
+
+/****** Signature ******/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
