@@ -27,6 +27,7 @@ body {
   background-color: var(--Very-dark-blue-mainbg);
   color: white;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   width: 100%;
@@ -153,8 +154,7 @@ span {
 /****** Signature ******/
 .attribution {
   font-size: 11px;
-  text-align: center;
-}
+margin-top: 1.5rem;}
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
